@@ -16,8 +16,17 @@ Express.js adalah salah satu framework Node.js yang paling populer dan banyak di
 1. terminal atau cmd ketik `nodemon npm start`
 2. buka browser dan ketikkan url `http://localhost:3000`
 
-## endpoint 
+## Endpoint API
 1. `http://localhost:3000/api/posts` untuk menampilkan seluruh data
 2. `http://localhost:3000/api/posts/:id` untuk menampilkan data berdasarkan id
-3. `http://localhost:3000/api/posts/store` untuk menambah data (Postman: Method POST, lalu klik tab Body dan pilih x-www-form-urlencoded)
-4. `http://localhost:3000/api/posts/update/:id` untuk mengubah data (Postman: Method PUT, lalu klik tab Body dan pilih x-www-form-urlencoded)
+3. `http://localhost:3000/api/posts/store` untuk menambah data (Postman: Method POST, lalu klik tab Body & pilih x-www-form-urlencoded)
+4. `http://localhost:3000/api/posts/update/:id` untuk mengubah data (Postman: Method PATCH, lalu klik tab Body & pilih x-www-form-urlencoded)
+5. `http://localhost:3000/api/posts/delete/:id` untuk menghapus data (Postman: Method DELETE)
+
+
+## Library yang digunakan
+1. Body-parser : Body Parser merupakan library yang berisi middleware untuk membaca sebuah data yang dikirimkan oleh HTTP POST dan menyimpannya sebagai objek JavaScript yang dapat di akses melalui req.body. Silahkan jalankan perintah berikut ini di dalam terminal/CMD untuk melakukan installasi Body Parser di dalam project Express.js.
+2. Express Validator : Express Validator adalah middleware untuk Express.js untuk memvalidasi data yang masuk ke dalam aplikasi. 
+3. Nodemon : Nodemon adalah library yang berguna untuk melakukan restart otomatis pada server Node.js ketika terjadi perubahan pada file yang ada di dalam project. Silahkan jalankan perintah berikut ini di dalam terminal/CMD untuk melakukan installasi Nodemon di dalam project Express.js.
+4. Mysql : MySQL adalah salah satu database yang paling populer dan banyak digunakan oleh para developer. Silahkan jalankan perintah berikut ini di dalam terminal/CMD untuk melakukan installasi MySQL di dalam project Express.js.
+5. CORS : CORS adalah singkatan dari Cross-Origin Resource Sharing. CORS adalah mekanisme yang digunakan untuk mengizinkan atau menolak akses dari suatu domain ke resource yang ada di domain lain. Silahkan jalankan perintah berikut ini di dalam terminal/CMD untuk melakukan installasi CORS di dalam project Express.js.
