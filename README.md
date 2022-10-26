@@ -6,22 +6,37 @@ Express.js adalah salah satu framework Node.js yang paling populer dan banyak di
 2. masuk ke folder express-api dengan terminal atau cmd ketik `cd express-api`
 3. jalankan perintah `npm install`
 4. jalankan perintah `npm start`
-5. buka browser dan ketikkan url `http://localhost:3000`
+5. buka browser dan ketikkan url http://localhost:3000
 
 ## Cara Penggunaan
 1. terminal atau cmd ketik `node index.js`
-2. buka browser dan ketikkan url `http://localhost:3000`
+2. buka browser dan ketikkan url http://localhost:3000
 
 ## Cara Penggunaan dengan Nodemon
 1. terminal atau cmd ketik `nodemon npm start`
-2. buka browser dan ketikkan url `http://localhost:3000`
+2. buka browser dan ketikkan url http://localhost:3000
 
 ## Endpoint API
-1. `http://localhost:3000/api/posts` untuk menampilkan seluruh data
-2. `http://localhost:3000/api/posts/:id` untuk menampilkan data berdasarkan id
-3. `http://localhost:3000/api/posts/store` untuk menambah data (Postman: Method POST, lalu klik tab Body & pilih x-www-form-urlencoded)
-4. `http://localhost:3000/api/posts/update/:id` untuk mengubah data (Postman: Method PATCH, lalu klik tab Body & pilih x-www-form-urlencoded)
-5. `http://localhost:3000/api/posts/delete/:id` untuk menghapus data (Postman: Method DELETE)
+1. Menampilkan seluruh Data
+``` 
+http://localhost:3000/api/posts
+```
+2. Menampilkan Data berdasarkan id 
+```
+http://localhost:3000/api/posts/:id
+``` 
+3. Menambah Data (Postman: Method POST, lalu klik tab Body & pilih x-www-form-urlencoded) 
+```
+http://localhost:3000/api/posts/store
+```
+4. Mengubah/Update Data (Postman: Method PATCH, lalu klik tab Body & pilih x-www-form-urlencoded) 
+```
+http://localhost:3000/api/posts/update/:id
+```
+5. Menghapus Data (Postman: Method DELETE) 
+```
+http://localhost:3000/api/posts/delete/:id
+```
 
 
 ## Library yang digunakan
