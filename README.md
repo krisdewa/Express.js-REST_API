@@ -20,3 +20,4 @@ Express.js adalah salah satu framework Node.js yang paling populer dan banyak di
 1. `http://localhost:3000/api/posts` untuk menampilkan seluruh data
 2. `http://localhost:3000/api/posts/:id` untuk menampilkan data berdasarkan id
 3. `http://localhost:3000/api/posts/store` untuk menambah data (Postman: Method POST, lalu klik tab Body dan pilih x-www-form-urlencoded)
+4. `http://localhost:3000/api/posts/update/:id` untuk mengubah data (Postman: Method PUT, lalu klik tab Body dan pilih x-www-form-urlencoded)
