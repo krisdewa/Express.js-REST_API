@@ -17,23 +17,23 @@ Express.js adalah salah satu framework Node.js yang paling populer dan banyak di
 2. buka browser dan ketikkan url http://localhost:3000
 
 ## Endpoint API
-1. Menampilkan seluruh Data
+1. Menampilkan seluruh Data ( GET )
 ``` 
 http://localhost:3000/api/posts
 ```
-2. Menampilkan Data berdasarkan id 
+2. Menampilkan Data berdasarkan id ( GET )
 ```
 http://localhost:3000/api/posts/:id
 ``` 
-3. Menambah Data (Postman: Method POST, lalu klik tab Body & pilih x-www-form-urlencoded) 
+3. Menambah Data ( POST, lalu klik tab Body & pilih x-www-form-urlencoded ) 
 ```
 http://localhost:3000/api/posts/store
 ```
-4. Mengubah/Update Data (Postman: Method PATCH, lalu klik tab Body & pilih x-www-form-urlencoded) 
+4. Mengubah/Update Data ( PATCH, lalu klik tab Body & pilih x-www-form-urlencoded ) 
 ```
 http://localhost:3000/api/posts/update/:id
 ```
-5. Menghapus Data (Postman: Method DELETE) 
+5. Menghapus Data ( DELETE ) 
 ```
 http://localhost:3000/api/posts/delete/:id
 ```
