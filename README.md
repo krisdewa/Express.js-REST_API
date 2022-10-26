@@ -16,3 +16,6 @@ Express.js adalah salah satu framework Node.js yang paling populer dan banyak di
 1. terminal atau cmd ketik `nodemon npm start`
 2. buka browser dan ketikkan url `http://localhost:3000`
 
+## endpoint 
+1. `http://localhost:3000/api/posts` untuk menampilkan seluruh data
+<!-- 2. `http://localhost:3000/api/posts/:id` untuk menampilkan data berdasarkan id -->
