@@ -54,6 +54,8 @@ router.post(
         let formData = {
             title: req.body.title,
             content: req.body.content,
+            created_date: new Date(),
+            updated_date: new Date(),
         };
 
         // insert query
@@ -87,8 +89,8 @@ router.get("/(:id)", function (req, res) {
 
     connection.query(
         `SELECT * FROM posts WHERE id = ${id}`,
-        function (err, rows) {
-            if (err) {
+        function (error, rows) {
+            if (error) {
                 return res.status(500).json({
                     status: false,
                     message: "Internal Server Error",
@@ -140,6 +142,7 @@ router.patch(
         let formData = {
             title: req.body.title,
             content: req.body.content,
+            updated_date: new Date(),
         };
 
         // update query
@@ -172,9 +175,9 @@ router.delete("/delete/(:id)", function (req, res) {
 
     connection.query(
         `DELETE FROM posts WHERE id = ${id}`,
-        function (err, rows) {
+        function (error, rows) {
             //if(err) throw err
-            if (err) {
+            if (error) {
                 return res.status(500).json({
                     status: false,
                     message: "Internal Server Error",
