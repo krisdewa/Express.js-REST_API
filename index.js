@@ -1,6 +1,8 @@
+require("dotenv").config();
+
 const express = require("express");
 const app = express();
-const port = 3000;
+const port = process.env.APP_PORT;
 
 // app.get("/", (req, res) => {
 //     res.send("Hello World!");
@@ -31,6 +33,10 @@ app.use(bodyParser.json());
 // import route posts
 const postsRouter = require("./routes/posts");
 app.use("/api/posts", postsRouter); // use route posts di Express
+
+// import route index
+const indexRouter = require("./routes/index");
+app.use("/", indexRouter);
 
 app.listen(port, () => {
     console.log(`app listening at http://localhost:${port}`);
